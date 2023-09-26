@@ -122,6 +122,10 @@ body {
   width: 19rem;
 }
 
+.form-container input:focus {
+  outline: none;
+}
+
 .form-container p {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -148,6 +152,7 @@ body {
   padding: 1rem;
   color: rgb(57, 57, 57);
   font-size: 2rem;
+  cursor: pointer;
 }
 
 .inputs i {
