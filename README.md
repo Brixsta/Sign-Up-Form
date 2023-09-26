@@ -3,5 +3,6 @@
 [View Sign Up Form](https://brixsta.github.io/Sign-Up-Form/)
 
 - Coding exercise
-- CSS Heavy
+- CSS heavy
 - UI/UX
+
