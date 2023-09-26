@@ -1,0 +1,165 @@
+* {
+  font-family: "Quicksand", sans-serif;
+  padding: 0;
+  margin: 0;
+  user-select: none;
+  box-sizing: border-box;
+}
+
+body {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 65%;
+  width: 50rem;
+  position: relative;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.bg {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgb(6, 0, 167), rgb(0, 81, 255));
+  position: relative;
+  transition: ease-in-out 0.5s all;
+  z-index: 100;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.bg.change {
+  width: 40%;
+  .intro {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.form-container.change {
+  left: 20rem;
+}
+
+.sign-up-button {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 3rem;
+  border: solid 2px white;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 20%;
+  letter-spacing: 0.1rem;
+}
+
+.intro {
+  position: absolute;
+  top: 20%;
+  text-align: center;
+  color: white;
+  left: -100%;
+  transition: all ease-in 0.5s;
+  width: 20rem;
+}
+
+.intro h1 {
+  margin-bottom: 1rem;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.gray {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(253, 253, 253);
+  left: 0;
+  top: 0;
+  border-radius: 1rem;
+}
+
+.form-container {
+  z-index: 50;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  width: 60%;
+  transition: all ease-in-out 0.5s;
+}
+
+.form-container h1 {
+  margin-bottom: 1rem;
+  color: rgb(0, 81, 255);
+}
+
+.form-container input {
+  padding: 0.75rem 0.75rem 0.75rem 3rem;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  border: none;
+  background-color: rgb(227, 227, 227);
+  width: 19rem;
+}
+
+.form-container p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.form-container button {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 3rem;
+  border: none;
+  background-color: transparent;
+  color: white;
+  background-color: rgb(0, 81, 255);
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+  margin-top: 2rem;
+}
+
+.icon-group i {
+  margin-right: 1rem;
+  margin-left: 1rem;
+  padding: 1rem;
+  color: rgb(57, 57, 57);
+  font-size: 2rem;
+}
+
+.inputs i {
+  color: rgb(57, 57, 57);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 1rem;
+}
+
+.name,
+.password,
+.email {
+  position: relative;
+}
